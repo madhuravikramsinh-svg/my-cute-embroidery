@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>My Embroidery World</title>
+<style>
+body{margin:0;font-family:Segoe UI,sans-serif;background:#fff7fa;color:#555;overflow-x:hidden}
+header{padding:80px 20px;text-align:center;background:linear-gradient(#ffd6e7,#fff)}
+h1{color:#d63384;font-size:46px}.btn{background:#ff8fb1;color:#fff;padding:14px 28px;border-radius:30px;text-decoration:none}
+nav{position:sticky;top:0;background:#fff;border-bottom:2px solid #ffd6e7;padding:12px;text-align:center}
+nav a{text-decoration:none;margin:0 14px;color:#d63384;font-weight:bold}
+.sec{max-width:1000px;margin:40px auto;padding:25px;background:#fff;border-radius:20px;box-shadow:0 8px 20px rgba(255,182,193,.35)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.card{background:#ffe9f1;padding:18px;border-radius:16px;text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.gallery img{width:100%;border-radius:16px}
+footer{text-align:center;background:#ffd6e7;padding:20px}
+.fl{position:fixed;top:-30px;animation:f linear infinite;font-size:22px}@keyframes f{to{transform:translateY(110vh) rotate(360deg)}}
+</style></head><body>
+<header><h1 id='t'></h1><p>Where every stitch tells a beautiful story.</p><a class='btn' href='#about'>Explore</a></header>
+<nav><a href='#about'>About</a><a href='#why'>Why I Love It</a><a href='#gallery'>Gallery</a><a href='#contact'>Contact</a></nav>
+<div class='sec' id='about'><h2>About Embroidery</h2><p>Embroidery is a timeless art that transforms fabric into beautiful handmade creations using colorful threads, patience and creativity.</p></div>
+<div class='sec' id='why'><h2>Why I Love Embroidery</h2><div class='cards'><div class='card'>🌸 Creative</div><div class='card'>🧵 Relaxing</div><div class='card'>💖 Handmade</div><div class='card'>✨ Beautiful</div></div></div>
+<div class='sec' id='gallery'><h2>Gallery</h2><div class='gallery'>
+<img id='s' src='https://picsum.photos/seed/e1/500/350'><img src='https://picsum.photos/seed/e2/500/350'><img src='https://picsum.photos/seed/e3/500/350'></div></div>
+<div class='sec' id='contact'><h2>Contact</h2><p>Name: Your Name</p><p>Email: your@email.com</p></div>
+<footer>Made with 💕 | My Embroidery World</footer>
+<script>
+let txt="🌸 My Embroidery World 🌸",i=0;(()=>{if(i<txt.length){t.innerHTML+=txt[i++];setTimeout(arguments.callee,80)}})();
+let a=['https://picsum.photos/seed/e1/500/350','https://picsum.photos/seed/e4/500/350','https://picsum.photos/seed/e5/500/350'],k=0;
+setInterval(()=>{k=(k+1)%a.length;s.src=a[k]},2200);
+for(let j=0;j<25;j++){let d=document.createElement('div');d.className='fl';d.textContent='🌸';d.style.left=Math.random()*100+'vw';d.style.animationDuration=(5+Math.random()*5)+'s';d.style.animationDelay=Math.random()*5+'s';document.body.appendChild(d);}
+</script></body></html>

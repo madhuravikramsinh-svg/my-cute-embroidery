@@ -25,6 +25,8 @@ footer{text-align:center;background:#ffd6e7;padding:20px}
 <script>
 let txt="🌸 My Embroidery World 🌸",i=0;(()=>{if(i<txt.length){t.innerHTML+=txt[i++];setTimeout(arguments.callee,80)}})();
 let a=['https://picsum.photos/seed/e1/500/350','https://picsum.photos/seed/e4/500/350','https://picsum.photos/seed/e5/500/350'],k=0;
-setInterval(()=>{k=(k+1)%a.length;s.src=a[k]},2200);
+setInterval(()=>{k=(k+1)%a.length;s.src=a[k]},2200);<script>let txt="🌸 My Embroidery World 🌸",i=0; function typeWriter(){if(i<txt.length){t.innerHTML+=txt[i++];setTimeout(typeWriter,80)}}typeWriter();
+<script>let txt="🌸 My Embroidery World 🌸",i=0; function typeWriter(){if(i<txt.length){t.innerHTML+=txt[i++];setTimeout(typeWriter,80)}}typeWriter();
+
 for(let j=0;j<25;j++){let d=document.createElement('div');d.className='fl';d.textContent='🌸';d.style.left=Math.random()*100+'vw';d.style.animationDuration=(5+Math.random()*5)+'s';d.style.animationDelay=Math.random()*5+'s';document.body.appendChild(d);}
 </script></body></html>
